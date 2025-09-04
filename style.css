@@ -1,9 +1,17 @@
+/* add root styles */
+:root {
+    --brat: #8ACF01;
+    --black: #000000;
+    --white: #FFFFFF;
+    --coffee: #c0ff33;
+    --badass: #b4da55;
+}
+
 div {
     text-transform: uppercase;
     /* text-decoration: underline; */
-
     font-size: 6em;
-    border: 10px solid #000000;
+    border: 10px solid var(--black);
     padding: 0.125em 0.25em;
     display: inline-block;
     width: min-content;
@@ -18,8 +26,6 @@ body {
     margin: 0;
     padding: 1em;
     font-family: Arial, Helvetica, sans-serif;
-
-
 }
 
 * {
@@ -30,7 +36,7 @@ body {
     text-transform: uppercase;
     /* text-decoration: underline; */
     font-size: 6em;
-    border: 10px solid #000000;
+    border: 10px solid var(--black);
     padding: 0.125em 0.25em;
     display: inline-block;
     width: min-content;
@@ -45,10 +51,9 @@ body {
     margin: 0;
     padding: 1em;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #8ACF01;
-    /* color: #000000; */
-    /* color: #c0ff33; */
-    /* add a blur */
+    background-color: var(--brat);
+    /* color: var(--black); */
+    /* color: var(--coffee); */
     filter: blur(0.11em);
 }
 
